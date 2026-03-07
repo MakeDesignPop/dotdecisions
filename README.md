@@ -1,6 +1,6 @@
 # .decisions
 
-Code has git.
+Code has git.  
 Decisions have .decisions.
 
 A lightweight convention for preserving the reasoning behind how a project evolves.
