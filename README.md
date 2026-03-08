@@ -1,9 +1,11 @@
 # .decisions
 
 Code has git.  
-Decisions have .decisions.
+Decisions have .decisions/
 
 A lightweight convention for preserving the reasoning behind how a project evolves.
+
+Codebases track implementation and history well, but the reasoning behind decisions often disappears.
 
 ```
 src/        → implementation
@@ -11,6 +13,12 @@ tests/      → verification
 .git/       → history
 .decisions/ → reasoning
 ```
+`.decisions` introduces a simple folder inside a repository where short notes capture *why* choices were made.
+
+These notes are intentionally small.  
+1–5 lines is usually enough.  
+They capture reasoning while it is fresh, creating a permanent memory for the project.  
+Humans and AI tools can both read and write them.  
 
 ---
 
@@ -54,30 +62,37 @@ Humans and AI tools can both read and write them.
 
 ---
 
+## Philosophy
+
+Short reasoning notes, not documentation.
+If you're writing more than a few lines, you're documenting — not deciding.
+
+---
+
 ## Examples
 
 **project.md** — written once at the start
 
 ```
-Purpose: expense tracking app
-Stack: React Native, SQLite
-Constraints: must work offline, mobile first
-Goal: simple over scalable
+Purpose: task management tool
+Stack: Next.js, Postgres
+Constraints: must work without an account, fast load time
+Goal: simple over feature-rich
 ```
 
 **log.md** — append as you go
 
 ```
-2026-02-07
-Removed caching layer.
-Traffic too low to justify the complexity.
+2026-03-07
+Dropped onboarding flow from v1.
+Adds weeks of work, not needed to validate the idea.
 
-2026-02-09
-Switched to a third-party auth library.
-Not worth maintaining custom auth at this stage.
+2026-03-09
+Switched to local storage over a database.
+No accounts in v1, database was overkill.
 
 2026-02-10
-Dropped dark mode from v1.
+Removed animations.
 Doubles UI work, not a launch priority.
 ```
 
