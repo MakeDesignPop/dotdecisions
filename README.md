@@ -69,6 +69,24 @@ If you're writing more than a few lines, you're documenting — not deciding.
 
 ---
 
+## Why Not Just Use AI Memory?
+
+AI systems are powerful for reasoning, but long-term memory inside models is temporary and costly.
+
+Repositories already provide durable storage.
+
+By keeping reasoning inside the project:
+
+- the context travels with the code
+- future developers understand decisions
+- future AI tools can read the reasoning
+
+A repository may live for decades.
+
+`.decisions` ensures the reasoning lives with it.
+
+---
+
 ## Examples
 
 **project.md** — written once at the start
