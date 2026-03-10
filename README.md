@@ -114,6 +114,8 @@ Removed animations.
 Doubles UI work, not a launch priority.
 ```
 
+See [EXAMPLES.md](EXAMPLES.md) for more usage patterns.
+
 ---
 
 ## Status
