@@ -46,6 +46,12 @@ AI-assisted development makes this worse. Much of the reasoning happens in tempo
   project.md
   log.md
 ```
+Example entry:
+```
+2026-03-12  
+[RK] Switched to local storage over a database.  
+No accounts in v1, database was overkill.
+```
 
 Entries are intentionally small. 1–5 lines is usually enough.
 Humans and AI tools can both read and write them.
