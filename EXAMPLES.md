@@ -18,7 +18,7 @@ Example:
 
 ```
 2026-03-10
-Dropped onboarding flow from v1.  
+[RK] Dropped onboarding flow from v1.  
 Adds weeks of work, not needed to validate the idea.
 ```
 
@@ -35,9 +35,29 @@ sessions/
 Example:
 ```
 2026-03-12  
-Switched to local storage over a database.  
+[SK] Switched to local storage over a database.  
 No accounts in v1, database was overkill.
 ```
+
+---
+
+## Team Structure
+
+
+.decisions/  
+project.md  
+sessions/  
+frontend/  
+backend/  
+
+
+Example:
+```
+2026-03-13 
+[JN] Reworked hero layout.
+Improves CTA visibility.
+```
+
 ---
 
 ## Architecture Decisions
@@ -50,6 +70,7 @@ api.md
 
 Example:  
 ```
-Using REST instead of GraphQL.  
+2026-03-14 
+[RK] Using REST instead of GraphQL.  
 Reason: simpler client integration.
 ```
